@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="Moq" Version="4.20.72" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Models\FinancialPositions.PositionsServices.Core\FinancialPositions.PositionsServices.Core.csproj" />
+    <ProjectReference Include="..\..\Models\FinancialPositions.RatesServices.Core\FinancialPositions.RatesServices.Core.csproj" />
+    <ProjectReference Include="..\..\Models\FinancialPositions.Shared.Core\FinancialPositions.Shared.Core.csproj" />
+    <ProjectReference Include="..\..\Services\FinancialPositions.PositionsServices.Services\FinancialPositions.PositionsServices.Services.csproj" />
+    <ProjectReference Include="..\..\Services\FinancialPositions.RatesServices.Services.CoinMarketCap\FinancialPositions.RatesServices.Services.CoinMarketCap.csproj" />
+    <ProjectReference Include="..\..\Services\FinancialPositions.RatesServices.Services.Core\FinancialPositions.RatesServices.Services.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>
